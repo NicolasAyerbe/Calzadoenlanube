@@ -7,15 +7,110 @@
     <title>Eliminar producto</title>
 </head>
 <body>
-    <table>
-        <tr>
-    <td>¿Esta seguro que quiere eliminar este producto?</td>
-    <tr>
-    <td><a href="/productos">Si</a></td>
-    <td><a href="/productos">No</a></td>
-</tr>
-</tr>
-    </table>
+    <div>
+       
+    <h1>¿Esta seguro que quiere eliminar este producto?</h1>
+    <p class="text"></p>
+<a class="btn btn-green" href="/productos" >Si</a>
+<a class="btn btn-red" href="/productos">No</a>
+</div>
 
 </body>
+<style type="text/css">  
+    .btn-red{
+    color: white;
+    background-color: #be1b10;
+    padding: 20px 62px;
+    
+
+   
+}
+
+.btn-red:hover{
+    background-color: #94160d;
+}
+.btn-red:active{
+    background-color: #5c0e08;
+}
+    .desc {
+        color: black;
+        
+    }
+    .add{
+        cursor:pointer;
+    }
+
+
+    .link{
+        text-align: center;
+        color:#0703fc;
+        
+    }
+    .btn {
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-flex;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+}
+.btn-select{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.btn-select:focus{
+    border-color: #0377fc;
+}
+.btn-green{
+    color: white;
+    background-color: #0377fc;
+    padding: 20px 64px;
+
+   
+}
+
+.btn-green:hover{
+    background-color: #196bc9;
+}
+.btn-green:active{
+    background-color: #104786;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+body{
+    background-color: #003572;
+}
+div{
+    
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    color: rgb(116, 116, 116);
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    
+}
+input,text{
+    outline: none;
+    border: 0;
+    width: 290px;
+
+}
+.field{
+    border: solid 1px ;
+    padding: 10px;
+    width: 268px;
+
+}
+.field:focus{
+    border-color:#0377fc ;
+}
+.center{
+    text-align: center;
+}
+</style>
 </html>
