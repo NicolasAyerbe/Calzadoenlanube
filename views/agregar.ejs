@@ -7,43 +7,128 @@
     <title>Agregar un produto</title>
 </head>
 <body>
+    <section>
     <form action="">
-        <table>
+        <div>
+            <h1>Registra un producto</h1>
             <tr>
-                <td>agregar imagen</td>
+                <td>Agregar imagen  <p class="add desc">[+]</p></td>
             </tr>
-            <tr>
-                <td>Nombre:</td>
-                <td><input type="text" required></td>
-            </tr>
-            <tr>
-                <td>Precio:</td>
-                <td>$<input type="number" required></td>
-            </tr>
-            <tr>
-                <td>Descripcion:</td>
-                <td><input type="text" required></td>
-            </tr>
-            <tr>
-                <td>Stock:</td>
-                <td><input type="number" required></td>
-            </tr>
+            <p class="text"></p>
+                
+            <input class="field" type="text" name="" placeholder="Ingresa Nombre" required>
+            <p class="text"></p>
+                
+                <input class="field" type="number" name="" placeholder="Ingresa Precio" required>
+                <p class="text"></p>
+                
+                <textarea class="field" placeholder="Descripcion" cols="30" rows="5"></textarea>
+                <p class="text"></p>
+                
+                <input class="field" type="number" name="" placeholder="Ingresa stock" required>
+                <br>
+                <p class="text"></p>
             <tr>
                 <td>Categoria:</td>
-                <td><select name="txt" required>
+                <td><select class="btn-select" name="txt" required>
                     <option value="">Hombres</option>
                     <option value="">Mujeres</option>
                     <option value="">Niños</option>
                 </select></td>
             </tr>
-             <td>los colores y puntos de venta </td><td> se agregaran automaticamente con los datos de tu perfil</td>
+            <br>
+            
+              <p class="desc">los colores y puntos de venta  se agregaran automaticamente con los datos de tu perfil</p> 
+             
+             <p class="text"></p>
             <tr>
-                <td><a href="/productos">Agregar</a></td>
+                <td><a  class="btn btn-green" href="/productos">Agregar</a></td>
             </tr>
             <tr>
-                <td><a href="/productos">Cancelar</a></td>
+                <td><a class="btn btn-green" href="/productos">Cancelar</a></td>
             </tr>
-        </table>
+        </div>
     </form>
 </body>
+<style type="text/css">
+    .desc {
+        color: black;
+        
+    }
+    .add{
+        cursor:pointer;
+    }
+
+
+    .link{
+        text-align: center;
+        color:#0703fc;
+        
+    }
+    .btn {
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-flex;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+}
+.btn-select{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.btn-select:focus{
+    border-color: #0377fc;
+}
+.btn-green{
+    color: white;
+    background-color: #0377fc;
+    padding: 20px 15px;
+
+   
+}
+
+.btn-green:hover{
+    background-color: #196bc9;
+}
+.btn-green:active{
+    background-color: #104786;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+body{
+    background-color: #003572;
+}
+div{
+    
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    color: rgb(116, 116, 116);
+    margin: 0 auto;
+    width: 300px;
+    height: 590px;
+}
+input,text{
+    outline: none;
+    border: 0;
+    width: 290px;
+
+}
+.field{
+    border: solid 1px ;
+    padding: 10px;
+    width: 268px;
+
+}
+.field:focus{
+    border-color:#0377fc ;
+}
+.center{
+    text-align: center;
+}
+</style>
 </html>

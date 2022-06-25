@@ -8,18 +8,19 @@
 </head>
 <body>
    <form action="/productos">
-       <table>
-           <tr>
-               <td>Nombre Producto:</td>
-               <td><input type="text" name="" placeholder="Ingresa Nombre" required></td>
-           </tr>
-           <tr>
-               <td>Precio:</td>
-               <td>$<input type="number" name="" placeholder="Ingresa Precio " required></td>
-           </tr>
+       <div>
+        <h1>Editar dellates de producto</h1>
+        <p class="text"></p>
+                
+        <input class="field" type="text" name="" placeholder="Ingresa Nombre" required>
+        <p class="text"></p>
+                
+        <input class="field" type="number" name="" placeholder="Ingresa Precio" required>
+
+        <p class="text"></p>
            <tr>
                <td>descuento:</td>
-               <td><select name="" required>
+               <td><select class="btn-select" name="" required>
                 <option value="">Sin decuento</option>
                 <option value="">10%</option>
                 <option value="">15%</option>
@@ -31,31 +32,125 @@
                 <option value="">50%</option>
             </select></td>
            </tr>
-           <tr>
-               <td>Stock:</td>
-               <td><input type="number" name="" placeholder="Ingresa Stock" required></td>
-
+           <p class="text"></p>
+                
+            <input class="field" type="number" name="" placeholder="Ingresa Stock" required>
+            <p class="text"></p>
+                
+                <textarea class="field" placeholder="Descripcion" cols="30" rows="5"></textarea>
+                <p class="text"></p>
+            <tr>
+               
+                <td><a class="btn btn-red" href="/colores">Editar Colores</a></td>
+            </tr>
+            <p class="text"></p>
+            <tr>
+                
+                <td><a class="btn btn-red" href="/puntosVentas">Editar puntos de venta</a></td>
+            </tr>
+            <p class="text"></p>
+            <tr>
+                <td><a  class="btn btn-green" href="/productos">Actualizar</a></td>
             </tr>
             <tr>
-                <td>descripcion:</td>
-                <td><input type="text" name="" placeholder="Ingresa Breve descipcion" required></td>
-
+                <td><a class="btn btn-green" href="/productos">Volver</a></td>
             </tr>
-            <tr>
-                <td>Colores:</td>
-                <td><a href="/colores">Editar Colores</a></td>
-            </tr>
-            <tr>
-                <td>puntos de venta:</td>
-                <td><a href="/puntosVentas">Editar puntos de venta</a></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Actualizar" name="btn1"></td>
-            </tr>
-            <tr>
-                <td><a href="/productos">Volver</a></td>
-            </tr>
-       </table>
+        </div>
    </form>
 </body>
+<style type="text/css">
+    .btn-red{
+    color: white;
+    background-color: #1b406b;
+    padding: 20px 15px;
+
+   
+}
+
+.btn-red:hover{
+    background-color: #00254e;
+}
+.btn-red:active{
+    background-color: #174579;
+}
+    .desc {
+        color: black;
+        
+    }
+    .add{
+        cursor:pointer;
+    }
+
+
+    .link{
+        text-align: center;
+        color:#0703fc;
+        
+    }
+    .btn {
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-flex;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+}
+.btn-select{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.btn-select:focus{
+    border-color: #0377fc;
+}
+.btn-green{
+    color: white;
+    background-color: #0377fc;
+    padding: 20px 15px;
+
+   
+}
+
+.btn-green:hover{
+    background-color: #196bc9;
+}
+.btn-green:active{
+    background-color: #104786;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+body{
+    background-color: #003572;
+}
+div{
+    
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    color: rgb(116, 116, 116);
+    margin: 0 auto;
+    width: 300px;
+    height: 630px;
+}
+input,text{
+    outline: none;
+    border: 0;
+    width: 290px;
+
+}
+.field{
+    border: solid 1px ;
+    padding: 10px;
+    width: 268px;
+
+}
+.field:focus{
+    border-color:#0377fc ;
+}
+.center{
+    text-align: center;
+}
+</style>
 </html>
