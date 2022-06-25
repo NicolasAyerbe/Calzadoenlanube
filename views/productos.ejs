@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+<div>
+    <nav>
+        <ul>
+       <li class="main"><a class="manu"  href="/">Inicio</a></li> 
+       <li class="main"><a class="manu" href="/consultaUsuario">Perfil</a></li>
+    </ul>
+    </nav>
+</div>
+
+    <h1>Lista de productos</h1>
+        <div class="contenedor">
+            <img class="img-catalogo" src="img/zapatos2.jpg" alt="Zapatos_blancos_mlk">
+            <p>Zapatos mkl</p>
+            <p>$80.000</p>
+             <li class="detalle"><a class="del" href="/editarDetalles"><i></i>Editar Detalles</a></li>
+             <li class="detalle"><a class="del" href="/eliminarProductos"><i></i>Eliminar producto</a></li>
+        </div>
+        <div class="contenedor">
+            <img class="img-catalogo" src="img/zapatos3.jpg" alt="Pantuflas_Bering">
+            <p>Pantuflas Bering</p>
+            <p>$30.000</p>
+            <li class="detalle"><a class="del" href="/editarDetalles"><i></i>Editar Detalles</a></li>
+            <li class="detalle"><a class="del" href="/eliminarProductos"><i></i>Eliminar producto</a></li>
+
+        </div>
+        <div class="contenedor">
+            <img class="img-catalogo" src="img/zapatos4.jpg" alt="Tenis_calf">
+            <p>Tenis CALF</p>
+            <p>$60.000</p>
+            <li class="detalle"><a class="del" href="/editarDetalles"><i></i>Editar Detalles</a></li>
+            <li class="detalle"><a class="del" href="/eliminarProductos"><i></i>Eliminar producto</a></li>
+        </div>
+
+        <tr>
+            <td><a class="btn btn-green" href="/agregar">+ añadir </a></td>
+            </tr>
+</body>
+<style type="text/css">
+    .del {
+      color: rgb(5, 48, 238);
+      font-size: 19px;
+  }
+    .detalle{
+        list-style: none;
+    }
+    .manu {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    display: block;
+}
+
+nav ul .main .children li {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid wheat;
+}
+nav ul .main .children li a {
+    display: block;
+}
+    .main{
+    display: inline-block; 
+    position: relative; 
+} 
+.main:hover {
+    background-color: #3f94f5;
+    transition: .5s;
+}
+nav ul .main .manu {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+    ul {
+    list-style: none;
+    text-align: center;
+   
+}
+    nav {
+    background-color: #0377fc;
+    width: 100%;
+    position: fixed;
+/*  s   display:inline-block; */
+top:0;
+
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+    font-size: 19px;
+}
+    .btn-green{
+    color: white;
+    background-color: #0377fc;
+    padding: 20px 15px;
+    width: 90px;
+    text-align: center;
+   
+}
+.btn-green:hover{
+    background-color: #196bc9;
+}
+.btn-green:active{
+    background-color: #104786;
+}
+     p {
+    border: 0;
+    width: 290px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 0;
+}
+     h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+    .contenedor {
+    display: inline-block;
+    margin:30px;
+    padding: 20px;
+    height: 410px;
+    width: 310px;
+    background-color: #d6d6d6b9;
+    border-radius: 4px;
+  }
+</style>
+</html>
