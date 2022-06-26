@@ -7,49 +7,109 @@
     <title>Puntos de venta</title>
 </head>
 <body>
-    <form action="">
-        <table>
-    <h1>Puntos de venta</h1>
     <table border="1" >
        <tr>
         <th>ID</th>
         <th>Ciudad</th>
         <th>Locacion</th>
-        <th></th>
+        <th><img src="img/logo.png" alt=""></th>
        </tr>
        <tr>
         <td>01</td>
         <td>Pitalito</td>
         <td>Centro</td>
-        <td><a href="/eliminarPuntos">Eliminar</a></td>
+        <td><a  class="btn btn-red" href="/eliminarPuntos">Eliminar</a></td>
        </tr>
        <tr>
         <td>02</td>
         <td>Pitalito</td>
         <td>Calamo</td>
-        <td><a href="/eliminarPuntos">Eliminar</a></td>
+        <td><a  class="btn btn-red" href="/eliminarPuntos">Eliminar</a></td>
        </tr>
        <tr>
         <td>03</td>
         <td>Pitalito</td>
         <td>Solarte</td>
-        <td><a href="/eliminarPuntos">Eliminar</a></td>
+        <td><a  class="btn btn-red" href="/eliminarPuntos">Eliminar</a></td>
        </tr>
        <tr>
         <td>04</td>
         <td>Timana</td>
         <td>Parque</td>
-        <td><a href="/eliminarPuntos">Eliminar</a></td>
+        <td><a  class="btn btn-red" href="/eliminarPuntos">Eliminar</a></td>
        </tr>
        <tr>
-        <td><a href="/agregrarPuntos">Agregar Punto</a></td>
+        <td><a class="btn btn-green" href="/agregrarPuntos">Agregar +</a></td>
        </tr>
        <tr>
-        <td><a href="/editarDetalles">Volver</a></td>
+        <td><a class="btn btn-green" href="/editarDetalles">Volver</a></td>
        </tr>
 </table>
-  </form>
+ 
     
 
 </body>
+<style type="text/css">
+    table{
+        background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 auto;
+    
+    }
+    .btn {
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+}
+    .btn-green{
+    color: white;
+    background-color: #0377fc;
+    padding: 20px 15px;
+    width: 90px;
+    text-align: center;
+   
+}
+.btn-green:hover{
+    background-color: #196bc9;
+}
+.btn-green:active{
+    background-color: #104786;
+}
+.btn-red{
+    color: white;
+    background-color: #da2316;
+    padding: 20px 15px;
+    width: 90px;
+    text-align: center;
+   
+}
+.btn-red:hover{
+    background-color: #c91919;
+}
+.btn-red:active{
+    background-color: #861010;
+}
+    tr {
+    width: 40px;
+    height: 50px;
+    border-color:#fdfdfd ;
+    border-style: groove;
+    }
+    td {
+        color:black;
+        text-align: center;
+    }
+    th {
+        color: rgb(116, 116, 116);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        background-color: #003572;
+    }
+
+    </style>
 </html>
